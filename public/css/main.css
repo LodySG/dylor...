@@ -1,8 +1,65 @@
+.spinner {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+}
+
+.brand
+{
+    position: relative;
+    top: 40%;
+    left: 40%;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;                
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+    0%, 100% { 
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 50% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
 .channel
 {
     height: 100vh;
     width: 100vw;
-    position: relative;
+}
+
+.logo
+{
+    position: absolute;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
 }
 
 .soca
@@ -37,4 +94,19 @@
 {
     background-color: deepskyblue;
 }
+.navbar
+{
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
 
+.navbar .navbar-brand
+{
+    color: white;
+}
+
+.widget
+{
+    position: relative;
+}

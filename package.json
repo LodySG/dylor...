@@ -9,7 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.1.0",
+    "jquery-offcanvas": "^3.4.6",
+    "soundcloud": "^3.1.2",
+    "velocity-animate": "^1.2.3"
   },
   "devDependencies": {
     "browser-sync": "^2.15.0",
