@@ -1,0 +1,40 @@
+.channel
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.soca
+{
+    background-color: indianred
+}
+.zouk
+{
+    background-color: rebeccapurple;
+}
+.hiphop
+{
+    background-color: black;
+}
+.chill
+{
+    background-color: saddlebrown;
+}
+.dancehall
+{
+    background-color: yellowgreen;
+}
+.reggae
+{
+    background-color: green;
+}
+.kompa
+{
+    background-color: dodgerblue;
+}
+.uk
+{
+    background-color: deepskyblue;
+}
+
