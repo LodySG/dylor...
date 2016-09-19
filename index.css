@@ -1,14 +1,7 @@
 body
 {
-    background-color: black;
-}
-
-#offcanvas
-{
-    position: fixed;
-    top: 50px;
-    left: -20vw;
-    width: 20vw;
+  background-color: black;
+  color: white;
 }
 
 .spinner {
@@ -16,13 +9,6 @@ body
     height: 100vh;
     background-color: black;
     position: absolute;
-}
-
-.brand
-{
-    position: relative;
-    top: 40%;
-    left: 40%;
 }
 
 .double-bounce1, .double-bounce2 {
@@ -125,4 +111,11 @@ body
     position: fixed;
     top: 20px;
     left: 20px;
+}
+
+.brand
+{
+    position: relative;
+    top: 40%;
+    left: 40%;
 }

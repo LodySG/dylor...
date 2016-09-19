@@ -1,76 +1,32 @@
-
 <!DOCTYPE html>
-<html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dyloradio</title>
-
-        <!-- Bootstrap CSS -->
-        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="node_modules/animate.css/animate.min.css" rel="stylesheet">
-        <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="public/css/main.css" rel="stylesheet">
-        <link rel="icon" href="public/img/favicon.ico" type="image/x-icon">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>  
-        
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-        </div>
-        <div class="logo" style="display: none;">
-            <h1 class="brand">DyloRadio</h1>
-        </div>
-        <div id="app" style="display: none;">
-            
-            <button type="button" id="btnmenu" class="btn btn-primary">
-                <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-            </button>
-
-            <div id="offcanvas" class="container">
-                <nav class="navbar">
-                    <ul class="nav nav-pills nav-stacked">
-                        <li role="presentation" class="active">hiphop</li>
-                        <li role="presentation" class=""><a href="">soca</a></li>
-                        <li role="presentation" class=""><a href="">zouk</a></li>
-                        <li role="presentation" class=""><a href="">chill</a></li>
-                        <li role="presentation" class=""><a href="">dancehall</a></li>
-                        <li role="presentation" class=""><a href="">reggae</a></li>
-                        <li role="presentation" class=""><a href="">kompa</a></li>
-                        <li role="presentation" class=""><a href="">uk</a></li>
-                    </ul>
-                </nav>    
-            </div>
-            
-            <div id="display"></div>
-
-            <div class="hiphop channel"></div>
-            <div class="soca channel"></div>
-            <div class="zouk channel"></div>
-            <div class="chill channel"></div>
-            <div class="dancehall channel"></div>
-            <div class="reggae channel"></div>
-            <div class="kompa channel"></div>
-            <div class="uk channel"></div>
-            <div class="container">
-                <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-                    <a class="navbar-brand" href="#">DyloRadio</a>
-                </nav>
-            </div>
-        </div>
-        <!-- jQuery -->
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="node_modules/soundcloud/sdk.js"></script>
-        <script src="public/js/main.js"></script>
-    </body>
+<html>
+  <head>
+    <base href="/">
+    <title>Dyloradio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
+  </head>
+  <body>
+    <mainapp>
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </mainapp>
+  </body>
 </html>
