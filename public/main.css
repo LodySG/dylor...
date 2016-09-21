@@ -1,7 +1,11 @@
 body
 {
   background-color: black;
-  color: white;
+}
+
+h1#brand
+{
+    color: white;
 }
 
 .spinner {
