@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SoundcloudService } from '../services/soundcloud/soundcloud.service';
+import { Playlist } from '../entities/playlist';
+declare var $: JQueryStatic;
 
 @Component({
     moduleId: module.id,
@@ -17,6 +19,7 @@ export class ChannelComponent implements OnInit {
         //this.date = new Date();
         //this.soundcloudService.getTrackPlayer(64112105);
         //this.soundcloudService.getPlaylists();
+        
      }
 
      /*
